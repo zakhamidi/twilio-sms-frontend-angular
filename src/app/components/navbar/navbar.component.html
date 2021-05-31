@@ -1,0 +1,9 @@
+<nav class="navbar navbar-dark bg-success">
+    <a class="navbar-brand" href="#">{{ 'sendsms' | translate }}</a>
+    <span class="navbar-text">
+        <button *ngIf="en" class="btn btn-rounded btn-floating" (click)="useLanguage('en')"><span class="flag-icon flag-icon-gb"></span></button>
+        <button *ngIf="!en" class="btn btn-rounded btn-floating" (click)="useLanguage('en')" disabled><span class="flag-icon flag-icon-gb"></span></button>
+        <button *ngIf="!en" class="btn btn-rounded btn-floating" (click)="useLanguage('de')" ><span class="flag-icon flag-icon-de"></span></button>
+        <button *ngIf="en" class="btn btn-rounded btn-floating" (click)="useLanguage('de')" disabled><span class="flag-icon flag-icon-de"></span></button>
+    </span>
+</nav>
